@@ -1,6 +1,6 @@
 // create array of all possible characters
 /* possible characters */
-const characters = [
+const chars = [
   'A',
   'B',
   'C',
@@ -94,8 +94,6 @@ const characters = [
   '/',
 ]
 
-// set isAlive boolean
-let isAlive = false
 // store text from id password one in variable
 let passwordOne = document.getElementById('passwordOne')
 // store text from id password two in variable
@@ -107,18 +105,9 @@ let passwordTwoArr = []
 // set password length
 let passwordLength = 15
 
-/* If there aren't already passwords, generate passwords, otherwise clear passwords and generate new passwords */
-function generatePasswords() {
-  if (isAlive === false) {
-    generatePasswordOne()
-    generatePasswordTwo()
-    isAlive = true
-  }
-}
-
 /* create random index between 0 and the length of the characters array to use as index number*/
 function createRandomIndex() {
-  let randomIndex = Math.floor(Math.random() * characters.length)
+  let randomIndex = Math.floor(Math.random() * chars.length)
   return randomIndex
 }
 
@@ -128,7 +117,7 @@ function generatePasswordOne() {
     // call random index function and in variable
     let randomIndex = createRandomIndex()
     // push the random index onto the array
-    passwordOneArr.push(characters[randomIndex])
+    passwordOneArr.push(chars[randomIndex])
   }
   // loop through the array 15 times and display the characters[randomIndex] in the textContent
   for (let i = 0; i < passwordLength; i++) {
@@ -142,10 +131,38 @@ function generatePasswordTwo() {
     // call random index function and in variable
     let randomIndex = createRandomIndex()
     // push the random index onto the array
-    passwordTwoArr.push(characters[randomIndex])
+    passwordTwoArr.push(chars[randomIndex])
   }
   // loop through the array 15 times and display the characters[randomIndex] in the textContent
   for (let i = 0; i < passwordLength; i++) {
     passwordTwo.textContent += passwordTwoArr[i]
   }
 }
+
+// set initial state
+let isAlive = false
+// toggle the isAlive boolean to true
+// run the generate passwords function
+// toggle to false
+function toggle() {
+  isAlive = isAlive ? false : true
+  generatePasswords()
+  isAlive = false
+}
+
+/* If boolean is false (there aren't any passwords) then generate passwords */
+function generatePasswords() {
+  // if is alive is true, clear the text fields then run the generate functions
+  // else, run the functions
+  if (isAlive === true) {
+    generatePasswordOne()
+    generatePasswordTwo()
+  }
+}
+
+/* Copy Password */
+/* function copyPassword() {
+  var copyText = document.getElementById('password')
+  copyText.select()
+  document.execCommand('copy')
+} */
