@@ -1,0 +1,19 @@
+{
+  "name": "project_password-generator",
+  "version": "1.0.0",
+  "description": "A password generator written in JavaScript, HTML, and CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinTsugranes/project_password-generator.git"
+  },
+  "author": "justinTsugranes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justinTsugranes/project_password-generator/issues"
+  },
+  "homepage": "https://github.com/justinTsugranes/project_password-generator#readme"
+}

@@ -145,7 +145,7 @@ body {
   height: 28px;
 }
 
-#generatePassword {
+#generatePasswords {
   /* Auto layout */
   display: flex;
   flex-direction: row;
@@ -177,6 +177,14 @@ body {
   flex-grow: 0;
 }
 
+#generatePasswords:hover {
+  cursor: pointer;
+}
+
+#generatePasswords:active {
+  background-color: darkgreen;
+}
+
 hr {
   width: 446px;
   height: 1px;
@@ -184,20 +192,27 @@ hr {
   border: 1px solid #2f3e53;
 }
 
-.password-container {
+.passwords-container {
   display: flex;
   justify-content: space-between;
 }
 
 #passwordOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 211px;
   height: 39px;
   background: var(--med-dark);
   border-radius: 6px;
   margin-top: 35px;
+  color: var(--accent-color);
 }
 
 #passwordTwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 211px;
   height: 39px;
   background: var(--med-dark);
