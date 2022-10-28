@@ -5,15 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password Generator</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div class="main-container">
-      <h1 class="main-heading"><span>Generate a</span><br />random password</h1>
-      <p>Never use an insecure password again.</p>
-      <button id="generatePassword">Generate passwords</button>
-      <hr />
-      <div class="password1"></div>
-      <div class="password2"></div>
+      <div class="main-content">
+        <h1 class="main-heading">
+          <span>Generate a</span><br />random password
+        </h1>
+        <p class="sub-heading">Never use an insecure password again.</p>
+        <button id="generatePassword">Generate passwords</button>
+        <hr />
+        <div class="password-container">
+          <p id="passwordOne"></p>
+          <p id="passwordTwo"></p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

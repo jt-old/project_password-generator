@@ -91,5 +91,117 @@ select {
   --light-color: #ffffff;
   --med-light: #d5d4d8;
   --med-dark: #273549;
-  --dark-color: #273549;
+  --dark-color: #1f2937;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main container */
+.main-container {
+  width: 550px;
+  height: 550px;
+  background-color: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.main-heading {
+  color: var(--accent-color);
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 40px;
+  width: 354px;
+  height: 80px;
+  left: 52px;
+  top: 115px;
+}
+
+.main-heading > span {
+  color: var(--light-color);
+}
+
+.sub-heading {
+  color: var(--med-light);
+  text-align: left;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  width: 372px;
+  height: 28px;
+}
+
+#generatePassword {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  /* padding: 9px 17px 9px 15px; */
+  /* gap: 12px; */
+  width: 191px;
+  height: 42px;
+
+  background-color: var(--accent-color);
+  color: var(--light-color);
+
+  /* shadow/sm */
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+
+  /* border */
+  border: none;
+  border-radius: 6px;
+
+  /* text */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  /* Inside auto layout */
+  flex: none;
+  flex-grow: 0;
+}
+
+hr {
+  width: 446px;
+  height: 1px;
+  margin-top: 35px;
+  border: 1px solid #2f3e53;
+}
+
+.password-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#passwordOne {
+  width: 211px;
+  height: 39px;
+  background: var(--med-dark);
+  border-radius: 6px;
+  margin-top: 35px;
+}
+
+#passwordTwo {
+  width: 211px;
+  height: 39px;
+  background: var(--med-dark);
+  border-radius: 6px;
+  margin-top: 35px;
+  color: var(--accent-color);
 }
