@@ -105,6 +105,8 @@ body {
 .main-container {
   width: 550px;
   height: 550px;
+  margin: 0 auto;
+  padding: 1em;
   background-color: var(--dark-color);
   display: flex;
   flex-direction: column;
@@ -131,6 +133,11 @@ body {
   top: 115px;
 }
 
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-heading > span {
   color: var(--light-color);
 }
@@ -145,10 +152,10 @@ body {
   height: 28px;
 }
 
-#generatePasswords {
+.generate-pw-btn,
+.change-pw-length {
   /* Auto layout */
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
@@ -156,32 +163,27 @@ body {
   /* gap: 12px; */
   width: 191px;
   height: 42px;
-
   background-color: var(--accent-color);
   color: var(--light-color);
-
   /* shadow/sm */
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-
   /* border */
   border: none;
   border-radius: 6px;
-
   /* text */
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-
   /* Inside auto layout */
   flex: none;
   flex-grow: 0;
 }
 
-#generatePasswords:hover {
+.generate-pw-btn:hover {
   cursor: pointer;
 }
 
-#generatePasswords:active {
+.generate-pw-btn:active {
   background-color: darkgreen;
 }
 
@@ -192,31 +194,25 @@ hr {
   border: 1px solid #2f3e53;
 }
 
-.passwords-container {
+.display-pw-container {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 600px;
+  align-items: center;
+  justify-content: center;
+  margin: 4em auto;
+  padding: 1.5em;
 }
 
-#passwordOne {
+.pw-display {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 211px;
-  height: 39px;
+  width: 2.5em;
+  height: 10em;
   background: var(--med-dark);
   border-radius: 6px;
-  margin-top: 35px;
-  color: var(--accent-color);
-}
-
-#passwordTwo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 211px;
-  height: 39px;
-  background: var(--med-dark);
-  border-radius: 6px;
-  margin-top: 35px;
+  margin: 0.5em;
+  padding: 0.4em 0.8em;
   color: var(--accent-color);
 }

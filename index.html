@@ -14,22 +14,22 @@
           <span>Generate a</span><br />random password
         </h1>
         <p class="sub-heading">Never use an insecure password again.</p>
-        <input
-          type="number"
-          min="8"
-          max="21"
-          placeholder="change password length"
-          class="change-password-length"
-        />
-        <button id="generate-passwords-btn" onclick="generatePasswords()">
-          Generate passwords
-        </button>
+        <div class="actions">
+          <button class="generate-pw-btn">Generate passwords</button>
+          <input
+            type="number"
+            min="8"
+            max="15"
+            placeholder="Password Length"
+            class="change-pw-length"
+          />
+        </div>
         <!-- TODO on click of either passwords copy the text-->
         <!-- <button id="copyPassword" onclick="copyPassword()">
           Generate passwords
         </button> -->
         <hr />
-        <div class="display-passwords-container">
+        <div class="display-pw-container">
           <div class="pw-display one"></div>
           <div class="pw-display two"></div>
           <div class="pw-display three"></div>
