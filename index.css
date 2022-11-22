@@ -208,11 +208,31 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 2.5em;
-  height: 10em;
-  background: var(--med-dark);
-  border-radius: 6px;
+  background: #273549;
+  height: 2.5em;
+  width: 10em;
+  color: #5def92;
   margin: 0.5em;
   padding: 0.4em 0.8em;
-  color: var(--accent-color);
+  border-radius: 6px;
+}
+
+/* Media queries */
+
+@media (max-width: 450px) {
+  .display-pw-container {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+  .actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+  }
+  .actions > button {
+    margin: 0.5em;
+    padding: 0.4em 0.8em;
+  }
 }
