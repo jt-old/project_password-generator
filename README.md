@@ -46,13 +46,9 @@ A random password generator written in JavaScript, HTML, and CSS. It's setup to 
 
 [![Project Screen Shot][project-screenshot]][project-url] [![Contributors][contributors-shield]][contributors-url] [![Forks][forks-shield]][forks-url] [![Stargazers][stars-shield]][stars-url] [![Issues][issues-shield]][issues-url] [![MIT License][license-shield]][license-url]
 
-<!-- TODO: ADD LONG PROJECT DESCRIPTION -->
-
-<!-- LONG_PROJECT_DESCRIPTION -->
+A web-based tool for generating secure, random passwords. The tool allows users to specify the length of the password and is setup to be deployed in the Chrome Web Store as a Chrome Extension. This project was built using JavaScript, HTML, and CSS, and was an opportunity to learn more about random number generation and implementing user input in a web application
 
 _I'd love to hear any feedback or just thoughts. Feel free to reach out at my contact info below. Cheers!_
-
-<!-- TODO: UNCOMMENT APPLICABLE TECH -->
 
 ### Stack
 
